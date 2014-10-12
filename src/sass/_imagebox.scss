@@ -1,0 +1,41 @@
+//
+// Imagebox: Zeitdokumente
+// --------------------------------------------------
+
+#zeitdokumente {
+  background-color: $darker-bg-color;
+  color: $lightest-text-color;
+  max-width: 200px;
+  max-height: 360px;
+  width: auto;
+  height: auto;
+  padding-bottom: 10px;
+  h2 {
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* we need a margin in order to get a left-side offset for the border */
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px dashed $lightest-text-color;
+  }
+  figure {
+    margin: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-image: url("../img/Strich01.png") 0 0 300 0 stretch;
+    border-bottom: 10px dashed $primary-color;
+  }
+  img {
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    width: auto;
+    height: auto;
+    max-height: 200px;
+    max-width: 180px;
+  }
+}

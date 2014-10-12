@@ -1,0 +1,35 @@
+//
+// Variables
+// --------------------------------------------------
+
+// Colors
+$gray-darker: rgb(45,45,45);
+$gray-dark: rgb(90,90,90);
+$gray-light: rgb(204,204,204);
+$gray-lighter: rgb(179,179,179);
+$gray-lightest: rgb(242,242,242);
+$white: rgb(255,255,255);
+$light-blue: rgb(63,169,245);
+
+$body-bg:  $gray-dark !default;
+$darker-bg-color: $gray-darker;
+$dark-text-color: $gray-light !default;
+$lighter-text-color: $gray-lighter;
+$lightest-text-color: $gray-lightest !default;
+$contrast-text-color: $white;
+$primary-color: $light-blue !default;
+$light-bg: $white !default;
+$dark-bg: $gray-darker !default;
+
+// Fonts
+$font-family-sans-serif: "Avenir Medium", sans-serif;
+$font-family-serif: "Marion", serif;
+
+$font-size-base: 16px !default; // 12pt
+
+$font-size-h1: floor($font-size-base * 2.5) !default; // ~40px 30pt
+$font-size-h2: floor($font-size-base * 1.25) !default; // 20px 15pt
+$font-size-small-h2: $font-size-base !default; // 16px 12pt
+
+$font-weight-normal: 300;
+$font-weight-bold: 400;

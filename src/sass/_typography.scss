@@ -1,0 +1,63 @@
+//
+// Typography
+// --------------------------------------------------
+
+body {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+}
+
+h1 {
+  font-size: $font-size-h1;
+  font-weight: $font-weight-normal;
+  font-style: normal;
+}
+
+#einfuehrungstext {
+  font-family: $font-family-serif;
+  h2 {
+    font-size: $font-size-h2;
+    font-weight: $font-weight-bold;
+  }
+  .contentfragment {
+    font-weight: $font-weight-normal;
+    font-style: normal;
+    font-size: $font-size-base;
+  }
+  .fullcontent_link a {
+    //text-decoration: none;
+  }
+}
+
+#zeitdokumente {
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-normal;
+  font-style: normal;
+  h2 {
+    font-size: $font-size-h2;
+    font-weight: $font-weight-normal;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+  figcaption {
+    font-size: $font-size-base;
+  }
+}
+
+#verknuepfungen {
+  h2 {
+    font-family: $font-family-sans-serif;
+    font-size: $font-size-small-h2;
+    font-weight: $font-weight-normal;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+  li a {
+    font-family: $font-family-sans-serif;
+    font-size: $font-size-h2;
+    font-weight: $font-weight-bold;
+    font-style: normal;
+    //text-decoration: none;
+  }
+}
+

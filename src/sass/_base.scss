@@ -1,0 +1,30 @@
+//
+// Basic Styles
+// --------------------------------------------------
+
+body {
+  background-color: $body-bg;
+}
+
+h1 {
+  color: $dark-text-color;
+  margin: 0px;
+  padding: 10px;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  margin-top: 15px;
+  &:first-child {
+    margin-top: 0px;
+  }
+}

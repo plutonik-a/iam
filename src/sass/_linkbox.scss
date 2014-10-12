@@ -1,0 +1,39 @@
+//
+// Linkbox: Verknuepfungen
+// --------------------------------------------------
+
+#verknuepfungen {
+  /* no stroke length of dashes possible, the border is drawn around the whole content */
+  border: 1px dashed $lighter-text-color;
+  max-width: 300px;
+  h2 {
+    color: $lighter-text-color;
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  ul {
+    padding: 0px;
+    margin: 0px;
+  }
+  li {
+    /* see how margin and padding is used to
+    completely underline the single list entries
+    (padding/left-right: 0px) while at the same
+    time leaving 10px of space to the outer border */
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top: 1px dashed $lighter-text-color;
+    a {
+      color: $lighter-text-color;
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+}
