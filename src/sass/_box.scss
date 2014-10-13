@@ -1,0 +1,53 @@
+//
+// Contentbox
+// --------------------------------------------------
+
+.box {
+  //@include box(400px, 20px, none, none);
+}
+
+// Read more...
+.contentfragment {
+  padding: 10px;
+  max-height: 130px;
+  margin: 0px;
+  overflow: hidden;
+  h2 {
+    padding: 5px 0 0 0;
+    margin: 0px;
+  }
+  p:first-child {
+    margin-top: 0px;
+  }
+  p:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.box-list-heading {
+  margin: 0 10px;
+  padding: 10px 0;
+}
+
+.box-list {
+  padding: 0px;
+  margin: 0px;
+  li {
+    padding: 10px 0;
+    margin: 0 10px;
+    border-top: 1px dashed $lighter-text-color;
+    a {
+      color: inherit;
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+}
+
+.media {
+
+}
+
+.comment {
+
+}

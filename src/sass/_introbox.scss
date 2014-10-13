@@ -3,40 +3,19 @@
 // --------------------------------------------------
 
 #einfuehrungstext {
-  width: 300px;
-  height: auto;
-  background-color: $primary-color;
-}
-
-.contentfragment {
-  padding: 10px;
-  max-height: 130px;
-  color: $contrast-text-color;
-  margin: 0px;
-  overflow: hidden;
-  h2 {
-    padding: 0px;
-    padding-top: 5px;
-    margin: 0px;
-  }
-  p:first-child {
-    margin-top: 0px;
-  }
-  p:last-child {
-    margin-bottom: 0px;
-  }
+  //width: 300px;
+  //height: auto;
+  @include box(600px, 20px, $contrast-text-color, $primary-color);
 }
 
 .fullcontent_link a {
   color: $contrast-text-color;
-  background-image: url("../img/Pfeil_weiss01.png");
+  background: url("../img/Pfeil_weiss01.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-origin: padding-box;
   background-size: 20px 20px;
-  padding-top: 12px;
-  padding-bottom: 15px;
-  padding-left: 20px;
+  padding: 12px 0 15px 20px;
   margin-left: 15px;
   display: block;
 }

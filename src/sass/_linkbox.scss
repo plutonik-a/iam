@@ -3,17 +3,10 @@
 // --------------------------------------------------
 
 #verknuepfungen {
-  /* no stroke length of dashes possible, the border is drawn around the whole content */
+  @include box(400px, 20px, $lighter-text-color, none);
   border: 1px dashed $lighter-text-color;
-  max-width: 300px;
   h2 {
-    color: $lighter-text-color;
-    margin: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
+    @extend .box-list-heading;
   }
   ul {
     padding: 0px;
@@ -24,14 +17,11 @@
     completely underline the single list entries
     (padding/left-right: 0px) while at the same
     time leaving 10px of space to the outer border */
-    padding: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 10px 0;
+    margin: 0 10px;
     border-top: 1px dashed $lighter-text-color;
     a {
-      color: $lighter-text-color;
+      color: inherit;
       padding: 0px;
       margin: 0px;
     }

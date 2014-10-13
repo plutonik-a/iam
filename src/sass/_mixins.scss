@@ -1,0 +1,11 @@
+//
+// Mixins
+// --------------------------------------------------
+
+@mixin box($box-width, $box-padding, $color, $bg-color) {
+  width: $box-width;
+  max-width: $box-width;
+  padding: $box-padding;
+  color: $color;
+  background-color: $bg-color;
+}
