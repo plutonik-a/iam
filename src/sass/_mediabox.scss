@@ -1,7 +1,34 @@
 //
-// Mediabox
+// Media And Comment Boxes
 // --------------------------------------------------
 
-section {
+.media {
+}
 
+.comment {
+}
+
+.mediaboxes {
+  @include box(360px, 20px, $gray-lighter, $gray-darker);
+  font-family: $font-family-sans-light;
+  font-weight: 100;
+  h2 {
+    @extend .box-list-heading;
+    color: $primary-color;
+    font-family: $font-family-sans-serif;
+  }
+  ul {
+    padding: 0px;
+    margin: 0px;
+  }
+  li {
+    padding: 20px 0;
+    margin: 0;
+    border-top: 1px dashed $lighter-text-color;
+    a {
+      color: inherit;
+      padding: 0px;
+      margin: 0px;
+    }
+  }
 }

@@ -1,9 +1,11 @@
 //
-// Contentbox
+// General Styles for Content Boxes
 // --------------------------------------------------
 
 .box {
-  //@include box(400px, 20px, none, none);
+  h2 {
+    @extend .box-list-heading;
+  }
 }
 
 // Read more...
@@ -13,7 +15,7 @@
   margin: 0px;
   overflow: hidden;
   h2 {
-    padding: 5px 0 0 0;
+    padding: 20px 0 0 0;
     margin: 0px;
   }
   p:first-child {
@@ -25,8 +27,12 @@
 }
 
 .box-list-heading {
-  margin: 0 10px;
-  padding: 10px 0;
+  margin: 0;
+  padding: 20px 0;
+  text-transform: uppercase;
+  font-size: $font-size-h2;
+  font-weight: $font-weight-normal;
+  font-style: normal;
 }
 
 .box-list {
@@ -44,10 +50,10 @@
   }
 }
 
-.media {
-
-}
-
-.comment {
-
+.more:before {
+  content:'';
+  background: url("../img/Pfeil02.png") no-repeat;
+  position: absolute;
+  width: 50px;
+  height: 40px;
 }

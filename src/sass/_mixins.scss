@@ -2,10 +2,24 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin box($box-width, $box-padding, $color, $bg-color) {
+@mixin box($box-width, $box-padding, $color, $background) {
   width: $box-width;
   max-width: $box-width;
   padding: $box-padding;
   color: $color;
-  background-color: $bg-color;
+  background: $background;
+  border-radius: 4px;
+}
+
+@mixin more($background) {
+  background: $background;
+  content:'';
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 50px;
+  height: 40px;
+}
+
+@mixin box-dashed-heading($value, $color) {
+  border-bottom: $value dashed $color;
 }

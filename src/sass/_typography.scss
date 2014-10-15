@@ -14,17 +14,16 @@ h1 {
 }
 
 #einfuehrungstext {
-  font-family: $font-family-serif;
+  font-family: $font-family-bold;
   h2 {
     font-size: $font-size-h2;
-    font-weight: $font-weight-bold;
   }
   .contentfragment {
     font-weight: $font-weight-normal;
     font-style: normal;
     font-size: $font-size-base;
   }
-  .fullcontent_link a {
+  .more a {
     //text-decoration: none;
   }
 }
@@ -37,26 +36,26 @@ h1 {
     font-size: $font-size-h2;
     font-weight: $font-weight-normal;
     font-style: normal;
-    text-transform: uppercase;
   }
   figcaption {
     font-size: $font-size-base;
+    font-family: $font-family-sans-light;
   }
 }
 
 #verknuepfungen {
+  text-transform: uppercase;
   h2 {
     font-family: $font-family-sans-serif;
     font-size: $font-size-small-h2;
     font-weight: $font-weight-normal;
     font-style: normal;
-    text-transform: uppercase;
   }
   li a {
-    font-family: $font-family-sans-serif;
+    font-family: $font-family-sans-bold;
     font-size: $font-size-h2;
     font-weight: $font-weight-bold;
-    font-style: normal;
+    //font-style: normal;
     //text-decoration: none;
   }
 }

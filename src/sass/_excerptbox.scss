@@ -1,0 +1,40 @@
+//
+// Excerpt Box
+// --------------------------------------------------
+
+.excerpt {
+  @include box(380px, 0 20px, $dark-contrast-text-color, $white);
+  font-family: $font-family-serif;
+  max-height: 460px;
+  overflow: hidden;
+  h2 {
+    @include box-dashed-heading(2px, $primary-color);
+    color: $primary-color;
+    font-family: $font-family-sans-serif;
+  }
+
+  p {
+    line-height: 25px;
+  }
+
+  .description {
+    font-style: italic;
+  }
+  .speaker {
+    text-transform: uppercase;
+  }
+
+  > div {
+    padding: 10px 0 27px 0;
+  }
+  .more {
+    color: $primary-color;
+    &:before {
+      @include more(url("../img/Pfeil02.png") no-repeat);
+    }
+    > span {
+      padding: 0 0 0 60px;
+      line-height: 40px;
+    }
+  }
+}

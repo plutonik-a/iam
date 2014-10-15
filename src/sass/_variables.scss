@@ -5,6 +5,7 @@
 // Colors
 $gray-darker: rgb(45,45,45);
 $gray-dark: rgb(90,90,90);
+$gray: rgb(77,77,77);
 $gray-light: rgb(204,204,204);
 $gray-lighter: rgb(179,179,179);
 $gray-lightest: rgb(242,242,242);
@@ -13,6 +14,7 @@ $light-blue: rgb(63,169,245);
 
 $body-bg:  $gray-dark !default;
 $darker-bg-color: $gray-darker;
+$dark-contrast-text-color: $gray;
 $dark-text-color: $gray-light !default;
 $lighter-text-color: $gray-lighter;
 $lightest-text-color: $gray-lightest !default;
@@ -28,11 +30,12 @@ $font-family-sans-light: "Avenir Roman", sans-serif;
 $font-family-serif: "Marion Regular", serif;
 $font-family-bold: "Marion Bold", serif;
 
-$font-size-base: 16px !default; // 12pt
+$font-size-base: 20px !default;                        // 30pt/2
+$font-size-small: 13px !default;                       // 20pt/2
 
-$font-size-h1: floor($font-size-base * 2.5) !default; // ~40px 30pt
-$font-size-h2: floor($font-size-base * 1.25) !default; // 20px 15pt
-$font-size-small-h2: $font-size-base !default; // 16px 12pt
+$font-size-h1: floor($font-size-base * 2) !default;    // 40px 60pt/2
+$font-size-h2: floor($font-size-base * 1.5) !default; // 30px eigene Modifizierung! (original: 40pt/2)
+$font-size-small-h2: $font-size-base !default;         // 20px 30pt/2
 
 $font-weight-normal: 300;
 $font-weight-bold: 400;

@@ -4,16 +4,15 @@
 
 #zeitdokumente {
   @include box(400px, 20px, $lightest-text-color, $darker-bg-color);
-  //max-width: 200px;
-  max-height: 360px;
-  //width: auto;
+  //max-height: 360px;
   height: auto;
   padding-bottom: 10px;
 
   h2 {
     @extend .box-list-heading;
-    border-bottom: 1px dashed $lightest-text-color;
+    @include box-dashed-heading(1px, $lightest-text-color);
   }
+
   figure {
     margin: 0px;
     padding: 10px;
@@ -23,10 +22,9 @@
   img {
     margin: 0px;
     padding: 0px;
-    width: 200px;
+    height: 100%;
     width: auto;
-    height: auto;
-    max-height: 200px;
-    max-width: 180px;
+    //max-height: 200px;
+    //max-width: 180px;
   }
 }

@@ -6,16 +6,18 @@
   //width: 300px;
   //height: auto;
   @include box(600px, 20px, $contrast-text-color, $primary-color);
+  > div {
+    margin: 15px 0 0 8px;
+  }
+  .more {
+    color: $contrast-text-color;
+    &:before {
+      @include more(url("../img/Pfeil_weiss01.png") no-repeat);
+    }
+    span {
+      padding: 0 0 0 60px;
+      line-height: 40px;
+    }
+  }
 }
 
-.fullcontent_link a {
-  color: $contrast-text-color;
-  background: url("../img/Pfeil_weiss01.png");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-origin: padding-box;
-  background-size: 20px 20px;
-  padding: 12px 0 15px 20px;
-  margin-left: 15px;
-  display: block;
-}
