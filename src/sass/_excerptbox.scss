@@ -3,10 +3,14 @@
 // --------------------------------------------------
 
 .excerpt {
-  @include box(380px, 0 20px, $dark-contrast-text-color, $white);
+  @include box(380px, 0 20px 10px, $dark-contrast-text-color, $white);
   font-family: $font-family-serif;
-  max-height: 460px;
-  overflow: hidden;
+
+  // Height of excerpt-text
+  .contentfragment {
+    @include contentfragment(360px);
+  }
+
   h2 {
     @include box-dashed-heading(2px, $primary-color);
     color: $primary-color;
@@ -24,9 +28,6 @@
     text-transform: uppercase;
   }
 
-  > div {
-    padding: 10px 0 27px 0;
-  }
   .more {
     color: $primary-color;
     &:before {

@@ -4,7 +4,6 @@
 
 @mixin box($box-width, $box-padding, $color, $background) {
   width: $box-width;
-  max-width: $box-width;
   padding: $box-padding;
   color: $color;
   background: $background;
@@ -22,4 +21,23 @@
 
 @mixin box-dashed-heading($value, $color) {
   border-bottom: $value dashed $color;
+}
+
+@mixin contentfragment($max-height) {
+  max-height: $max-height;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0 0 27px 0;
+}
+
+@mixin clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
 }

@@ -1,0 +1,33 @@
+//
+// Header
+// --------------------------------------------------
+
+header {
+  @include background-image(linear-gradient($gray-darker, black));
+  width: 100%;
+  height: 60px;
+  text-transform: uppercase;
+  color: $link-color-default;
+  font-size: $font-size-base;
+  font-family: $font-family-sans-bold;
+  background-color: black;
+  a {
+    color: inherit;
+    padding: 0 0 0 20px;
+    line-height: 25px;
+    position: absolute;
+    &:before {
+      content:'←';
+      padding-right: 10px;
+      font-size: 40px;
+      line-height: 62px;
+      position: relative;
+      top: 6px;
+      left: 0px;
+    }
+    &:hover,
+    &:active {
+      color: $link-color-active;
+    }
+  }
+}

@@ -3,11 +3,19 @@
 // --------------------------------------------------
 
 .object {
-  @include box(100%, 0 20px 10px, $gray-lighter, $white);
+  @include box(100%, 0 20px 15px, $gray-lighter, $white);
   max-width: 500px;
   h2 {
     @include box-dashed-heading(2px, $lighter-text-color);
+    position: relative;
+    > input {
+      display: inline;
+      position: absolute;
+      top: 26px;
+      right: 15px;
+      width: 19%;
     }
+  }
   figure {
     margin: 0px;
     padding: 20px 0 0;

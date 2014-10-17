@@ -13,6 +13,10 @@ h1 {
   font-style: normal;
 }
 
+h2 {
+  line-height: 40px;
+}
+
 #einfuehrungstext {
   font-family: $font-family-bold;
   h2 {
@@ -55,8 +59,6 @@ h1 {
     font-family: $font-family-sans-bold;
     font-size: $font-size-h2;
     font-weight: $font-weight-bold;
-    //font-style: normal;
-    //text-decoration: none;
   }
 }
 

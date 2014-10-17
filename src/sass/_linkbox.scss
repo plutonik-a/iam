@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 #verknuepfungen {
-  @include box(400px, 20px, $lighter-text-color, none);
+  @include box(360px, 0 20px 0, $lighter-text-color, none);
   border: 1px dashed $lighter-text-color;
   h2 {
     @extend .box-list-heading;
@@ -13,8 +13,8 @@
     margin: 0px;
   }
   li {
-    padding: 10px 0;
-    margin: 0 10px;
+    padding: 20px 0;
+    margin: 0;
     border-top: 1px dashed $lighter-text-color;
     a {
       color: inherit;

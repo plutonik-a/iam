@@ -6,16 +6,38 @@ body {
   background-color: $body-bg;
 }
 
+section {
+  margin: 0;
+  width: 100%;
+  overflow: scroll !important;
+}
+
+.content {
+  overflow-x: visible;
+  width: 3000px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 h1 {
   color: $dark-text-color;
-  margin: 0px;
-  padding: 10px;
-  -moz-user-select: none;
-  user-select: none;
+  margin: 30px 0 30px 20px;
+  text-transform: uppercase;
+  //-moz-user-select: none;
+  //user-select: none;
+}
+
+h2 {
+  padding: 20px 0 15px;
 }
 
 ul {
   list-style-type: none;
+}
+
+p {
+  margin: 20px 0;
 }
 
 a {
@@ -23,8 +45,14 @@ a {
 }
 
 article {
-  margin: 15px 0;
+  margin: 15px 15px 15px 0;
   &:first-child {
     margin-top: 0px;
   }
+}
+
+.column {
+  @include float(left);
+  @include clearfix;
+  margin: 0 20px 20px 0;
 }

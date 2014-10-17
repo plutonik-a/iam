@@ -23,6 +23,9 @@ $primary-color: $light-blue !default;
 $light-bg: $white !default;
 $dark-bg: $gray-darker !default;
 
+$link-color-default: rgb(128,128,128);
+$link-color-active: $white;
+
 // Fonts
 $font-family-sans-serif: "Avenir Medium", sans-serif;
 $font-family-sans-bold: "Avenir Black", sans-serif;

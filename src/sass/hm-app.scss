@@ -1,9 +1,14 @@
 @charset "UTF-8";
 
+@import "compass/reset";
+@import "compass/utilities/general/float";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3/images";
 @import "variables";
 @import "typography";
 @import "base";
 @import "mixins";
+@import "header";
 @import "box";
 @import "objectbox";
 @import "excerptbox";
@@ -12,3 +17,4 @@
 @import "introbox";
 @import "imagebox";
 @import "linkbox";
+@import "footer";

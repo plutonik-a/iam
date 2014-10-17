@@ -3,10 +3,8 @@
 // --------------------------------------------------
 
 #zeitdokumente {
-  @include box(400px, 20px, $lightest-text-color, $darker-bg-color);
-  //max-height: 360px;
+  @include box(360px, 0 20px 10px, $lightest-text-color, $darker-bg-color);
   height: auto;
-  padding-bottom: 10px;
 
   h2 {
     @extend .box-list-heading;
@@ -14,17 +12,22 @@
   }
 
   figure {
-    margin: 0px;
-    padding: 10px;
-    border-image: url("../img/Strich01.png") 0 0 300 0 stretch;
+    margin: 0 0 10px 0;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
     border-bottom: 10px dashed $primary-color;
+    border-image: url("../img/Strich01.png") 0 25 300 7 stretch;
   }
+
+  figcaption {
+    margin: 0 0 10px 0;
+  }
+
   img {
-    margin: 0px;
+    margin: 30px 0px 20px;
     padding: 0px;
     height: 100%;
-    width: auto;
-    //max-height: 200px;
-    //max-width: 180px;
+    width: 100%;
   }
 }

@@ -2,16 +2,12 @@
 // Media And Comment Boxes
 // --------------------------------------------------
 
-.media {
-}
-
-.comment {
-}
-
 .mediaboxes {
-  @include box(360px, 20px, $gray-lighter, $gray-darker);
+  @include box(360px, 0 20px 10px, $gray-lighter, $gray-darker);
   font-family: $font-family-sans-light;
   font-weight: 100;
+  line-height: 30px;
+  margin: 0 0px 20px 0;
   h2 {
     @extend .box-list-heading;
     color: $primary-color;
