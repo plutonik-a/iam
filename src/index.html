@@ -12,125 +12,160 @@
         <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png">
 	</head>
 	<body>
+        <header>
+            <a href="#">Zurück</a>
+        </header>
+        <h1>Die Umsiedlerin</h1>
 		<section>
-			<h1>Die Umsiedlerin</h1>
-            <article class="box excerpt">
-                <h2>Textauszug</h2>
-                <p>
-                    <span class="description">
-                        14<br>
-                        Kate.<br>
-                        Niet. Fondrak
-                    </span>
-                </p>
-                <p>
-                    <span class="dialog">
-                        <span class="speaker">Fondrak</span><br>
-                        Ich geh zum Amerikaner. Gehst du mit?<br>
-                        <span class="speaker">Niet</span><br>
-                        Ich bleib wo ich was krieg.<br>
-                        <span class="speaker">Fondrak</span><br>
-                        Scheiß drauf, das düngt.<br>
-                    </span>
-                    <span class="description">Pause.</span>
-                </p>
-                <div>
-                    <a class="more"href="#"><span>Weiter lesen...</span></a>
+            <div class="content">
+                <article class="box excerpt column">
+                    <div class="contentfragment">
+                        <h2>Textauszug</h2>
+                        <p>
+                            <span class="description">
+                                14<br>
+                                Kate.<br>
+                                Niet. Fondrak
+                            </span>
+                        </p>
+                        <p>
+                            <span class="dialog">
+                                <span class="speaker">Fondrak</span><br>
+                                Ich geh zum Amerikaner. Gehst du mit?<br>
+                                <span class="speaker">Niet</span><br>
+                                Ich bleib wo ich was krieg.<br>
+                                <span class="speaker">Fondrak</span><br>
+                                Scheiß drauf, das düngt.<br>
+                            </span>
+                            <span class="description">Pause.</span>
+                        </p>
+                    </div>
+                    <div>
+                        <a class="more"href="#"><span>Weiter lesen...</span></a>
+                    </div>
+                </article>
+                <article class="box object column">
+                    <h2>Objekt
+                        <input type=image src=img/Kringel02.png name=selectedObject alt="Select Object">
+                    </h2>
+                    <figure>
+                        <img class="object-image" alt="A cute placeholder kitten." src="img/300-600.jpg"/>
+                    </figure>
+                </article>
+
+                <div class="column">
+                    <article class="box comment mediaboxes">
+                        <h2>Kommentar
+                            <span>
+                                <a class="more" href="#"></a>
+                            </span>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="#">Hochschule für Ökonomie</a>
+                            </li>
+                            <li>
+                                <a href="#">Lorem Ipsum</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="box media mediaboxes">
+                        <h2>Filme und Audio
+                            <span>
+                                <a class="more" href="#"></a>
+                            </span>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Die Korrektur <br>
+                                    13.11.1958, Berliner Rundfunk
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Die Brücke<br>
+                                    Ursendung: 13.10.1958</a>
+                            </li>
+                            <li>
+                                <a href="#">Die Brücke<br>
+                                    Ursendung: 13.10.1958</a>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
-            </article>
 
-            <article class="box object">
-                <h2>Objekt</h2>
-                <figure>
-                    <img class="object-image" src="img/stuhl.jpg"/>
-                    <figcaption>© Emilia Beseler</figcaption>
-                </figure>
+                <div class="column">
+                    <aside id="verknuepfungen" class="box">
+                        <h2>Mehr dazu unter:</h2>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Ort</a>
+                                </li>
+                                <li>
+                                    <a href="#">Zeit</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
 
-            </article>
-
-            <article class="box comment mediaboxes">
-                <h2>Kommentar</h2>
-                <ul>
-                    <li>
-                        <a href="#">Hochschule für Ökonomie</a>
-                    </li>
-                    <li>
-                        <a href="#">Lorem Ipsum</a>
-                    </li>
-                </ul>
-            </article>
-
-            <article class="box media mediaboxes">
-                <h2>Filme und Audio</h2>
-                <ul>
-                    <li>
-                        <a href="#">
-                            Die Korrektur <br>
-                            13.11.1958, Berliner Rundfunk
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">Die Brücke<br>
-                            Ursendung: 13.10.1958</a>
-                    </li>
-                    <li>
-                        <a href="#">Die Brücke<br>
-                            Ursendung: 13.10.1958</a>
-                    </li>
-                </ul>
-            </article>
-
-            <aside id="verknuepfungen" class="box">
-				<h2>Mehr dazu unter:</h2>
-				<nav>
-					<ul>
-						<li>
-							<a href="#">Ort</a>
-						</li>
-						<li>
-							<a href="#">Zeit</a>
-						</li>
-					</ul>
-				</nav>
-			</aside>
-
-            <article class="box list">
-                <figure class="circle"></figure>
-                <h2>Auf meine Merkliste</h2>
-            </article>
-
-            <article id="zeitdokumente">
-                <h2>Zeitdokumente</h2>
-                <figure>
-                    <img src="img/muller.jpg"/>
-                    <!--<img src="img/hm_mit_bk_tragelehn.jpg"/>-->
-                    <figcaption>
-                        Programmheft zur Uraufführung
-                    </figcaption>
-                </figure>
-            </article>
-
-            <article id="einfuehrungstext">
-                <div class="contentfragment">
-                    <h2>&bdquo;Die Umsiedlerin oder das Leben auf dem Lande&ldquo;</h2>
-                    <p>
-                        Heiner Müllers Stück spannt einen historischen Bogen von der Bodenreform 1945 bis zur Kollektivierung und Bildung der Landwirtschaftlichen Produktionsgenossenschaft 1960 in der DDR. Die dargestellte Dorfgemeinschaft bietet ein buntes Panoptikum aller Schichten, darunter Großbauern, Mittel-, Neu- und Kleinbauern, für die sich auch nach der Neuverteilung des Landes nicht viel zu bessern scheint (beispielhaft Ketzer), außerdem der Bürgermeister, vormals Melker, daneben der Parteisekretär und Kommunist Flint. Und da ist der Umsiedler und Anarchist Fondrak, der sich unter Kommunismus "Bier aus der Wand" vorstellt und lieber in den Westen geht, als eine Neubauernstelle anzutreten, obwohl die Umsiedlerin Niet von ihm schwanger ist.
-                    </p>
-                    <p>
-                        Erzählt wird das epische Panorama in Form einer Komödie (Blankvers und Prosa wechseln einander ab), die allerdings auch Genre-Elemente von Tragödie, Satire, Groteske und Volksstück enthält. Beispielsweise wird im 15.Bild, das den Anfang des Stückes (die Verteilung der Grenzsteine und der Selbstmord Ketzers) ins Parodistische gewendet: Der letzte Einzelbauer wird samt Frau zum "Umzug aus dem Ich ins Kollektiv" gezwungen; beide sträuben sich und flüchten in den Selbstmordversuch und Ohnmacht. Doch statt im Himmel zu landen, sind sie "Fürs erste [...] in der LPG" und beantragen umgehend einen Krankenschein. Trotz aller Widrigkeiten wird innerhalb der Stückhandlung eine scheinbar positive Entwicklung gezeigt, und die Kollektivierung tritt ihren Siegeszug auf "Der breiten Staße in den Sozialismus an.
-                    </p>
-                    <p>
-                        Doch die Uraufführung der "Umsiedlerin" an der Studentenbühne der Hochschule für Ökonomie in Berlin Karlshorst am 30.09.1961 unter der Regie von B.K. Tragelehn sorgte für einen kulturpolitischen Eklat. Nach Verhören noch in derselben Nacht distanzierten sich die Schauspieler von Autor, Regisseur und Stück, und alle wesentlichen kulturellen Institutionenwaren gezwungen, Stellung gegen Müller zu beziehen. Weder die wenigen Solidaritätsbekundungen noch Müllers eigene Verteidigung konnten die drastischen Folgen mildern: Müller wurde aus dem Schriftstellerverband ausgeschlossen, was einem Berufsverbot entsprach, Tragelehn wurde am Senftenberger Theater fristlos entlassen und zur Bewährung in den Braunkohletagebau geschickt. Für die nächsten Jahre breitete sich ein Schweigen über die "Umsiedlerin". Müllers gedruckte bzw. neu entstandenen Stücke wurden lange Zeit in der DDR weder gespielt noch veröffentlicht.
-                    </p>
-                    <p>
-                        Zu einer Neuaufführung (unter dem geänderten Titel "Die Bauern") kam es erst am 30.05.1976 an der Volksbühne Berlin unter der Regie von Fritz Marquardt, doch war diese nach Müllers Auskunft für das Publikum schon eine zu ferne Geschichte. Tragelehn selbst führte das Stück 1985 in Dresden unter dem Originaltitel wieder auf.
-                    </p>
+                    <article class="box list">
+                        <figure class="circle"></figure>
+                        <h2>Auf meine Merkliste</h2>
+                    </article>
                 </div>
-                <div>
-                    <a  class="more" href="#"><span>Weiter lesen...</span></a>
-                </div>
-            </article>
 
+                <article id="zeitdokumente" class="column">
+                    <h2>Zeitdokumente</h2>
+                    <figure>
+                        <img src="img/360-450.jpg"/>
+                        <figcaption>
+                            Programmheft zur Uraufführung
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article id="einfuehrungstext" class="column">
+                    <div class="contentfragment">
+                        <h2>&bdquo;Die Umsiedlerin oder das Leben auf dem Lande&ldquo;</h2>
+                        <p>
+                            Heiner Müllers Stück spannt einen historischen Bogen von der Bodenreform 1945 bis zur Kollektivierung und Bildung der Landwirtschaftlichen Produktionsgenossenschaft 1960 in der DDR. Die dargestellte Dorfgemeinschaft bietet ein buntes Panoptikum aller Schichten, darunter Großbauern, Mittel-, Neu- und Kleinbauern, für die sich auch nach der Neuverteilung des Landes nicht viel zu bessern scheint (beispielhaft Ketzer), außerdem der Bürgermeister, vormals Melker, daneben der Parteisekretär und Kommunist Flint. Und da ist der Umsiedler und Anarchist Fondrak, der sich unter Kommunismus "Bier aus der Wand" vorstellt und lieber in den Westen geht, als eine Neubauernstelle anzutreten, obwohl die Umsiedlerin Niet von ihm schwanger ist.
+                        </p>
+                        <p>
+                            Erzählt wird das epische Panorama in Form einer Komödie (Blankvers und Prosa wechseln einander ab), die allerdings auch Genre-Elemente von Tragödie, Satire, Groteske und Volksstück enthält. Beispielsweise wird im 15.Bild, das den Anfang des Stückes (die Verteilung der Grenzsteine und der Selbstmord Ketzers) ins Parodistische gewendet: Der letzte Einzelbauer wird samt Frau zum "Umzug aus dem Ich ins Kollektiv" gezwungen; beide sträuben sich und flüchten in den Selbstmordversuch und Ohnmacht. Doch statt im Himmel zu landen, sind sie "Fürs erste [...] in der LPG" und beantragen umgehend einen Krankenschein. Trotz aller Widrigkeiten wird innerhalb der Stückhandlung eine scheinbar positive Entwicklung gezeigt, und die Kollektivierung tritt ihren Siegeszug auf "Der breiten Staße in den Sozialismus an.
+                        </p>
+                        <p>
+                            Doch die Uraufführung der "Umsiedlerin" an der Studentenbühne der Hochschule für Ökonomie in Berlin Karlshorst am 30.09.1961 unter der Regie von B.K. Tragelehn sorgte für einen kulturpolitischen Eklat. Nach Verhören noch in derselben Nacht distanzierten sich die Schauspieler von Autor, Regisseur und Stück, und alle wesentlichen kulturellen Institutionenwaren gezwungen, Stellung gegen Müller zu beziehen. Weder die wenigen Solidaritätsbekundungen noch Müllers eigene Verteidigung konnten die drastischen Folgen mildern: Müller wurde aus dem Schriftstellerverband ausgeschlossen, was einem Berufsverbot entsprach, Tragelehn wurde am Senftenberger Theater fristlos entlassen und zur Bewährung in den Braunkohletagebau geschickt. Für die nächsten Jahre breitete sich ein Schweigen über die "Umsiedlerin". Müllers gedruckte bzw. neu entstandenen Stücke wurden lange Zeit in der DDR weder gespielt noch veröffentlicht.
+                        </p>
+                        <p>
+                            Zu einer Neuaufführung (unter dem geänderten Titel "Die Bauern") kam es erst am 30.05.1976 an der Volksbühne Berlin unter der Regie von Fritz Marquardt, doch war diese nach Müllers Auskunft für das Publikum schon eine zu ferne Geschichte. Tragelehn selbst führte das Stück 1985 in Dresden unter dem Originaltitel wieder auf.
+                        </p>
+                    </div>
+                    <div>
+                        <a  class="more" href="#"><span>Weiter lesen...</span></a>
+                    </div>
+                </article>
+            </div>
         </section>
+
+        <footer>
+           <nav>
+               <ul>
+                   <li>
+                       <a href="#">Archiv</a>
+                   </li>
+                   <li>
+                       <a href="#">Werk</a>
+                   </li>
+                   <li>
+                       <a href="#">Zeit</a>
+                   </li>
+                   <li>
+                       <a href="#">Ort</a>
+                   </li>
+               </ul>
+           </nav>
+        </footer>
 	</body>
 </html>
