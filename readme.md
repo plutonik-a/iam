@@ -1,5 +1,17 @@
 # HM-App
 
+## Benutzung
+
+### Start des Servers und Auslieferung der Dateien ins 'dist' Verzeichnis
+
+	gulp serve
+
+### Start der Datenbank
+
+	./starte-db
+
+---
+
 ## Ü CSS (2), Fragen
 
 ### Zeitdokumente
