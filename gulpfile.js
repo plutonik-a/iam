@@ -59,12 +59,17 @@ gulp.task('images', function() {
     .pipe(connect.reload())
 });
 
-// copy example files
+// copy html files
 gulp.task('copy', function() {
   // main documentation index html
   gulp.src(source + 'index.html')
     .pipe(gulp.dest(dest))
     .pipe(connect.reload());
+
+    // detail views
+    gulp.src(source + 'detailviews/**/*')
+        .pipe(gulp.dest(dest + 'detailviews'))
+        .pipe(connect.reload());
 });
 
 // Clean
