@@ -1,0 +1,56 @@
+//
+// Styles for detail view
+// --------------------------------------------------
+
+.detail {
+  background: $white;
+
+  h1 {
+    font-family: $font-family-sans-bold;
+    font-weight:$font-weight-bold;
+    font-size: $font-size-small-h1;
+    color: $light-blue;
+    border-bottom: 3px dotted $light-blue;
+    margin-right: 20px;
+    padding-bottom: 15px;
+  }
+  > section {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .content {
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  h2 {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+  .column {
+    visibility: hidden;
+    float: none;
+    height: 0;
+    margin: 0;
+    &.excerpt {
+      height: 600px;
+      display: block;
+      visibility: visible;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      background-color: $white;
+      width: 375px;
+      border-radius: 0;
+    }
+  }
+  .contentfragment {
+    max-height: 600px;
+    overflow-y: scroll;
+  }
+  .more {
+    display: none;
+  }
+}
+

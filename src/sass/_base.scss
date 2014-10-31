@@ -6,6 +6,10 @@ body {
   background-color: $body-bg;
 }
 
+.contentwrapper {
+  margin-top: 60px;
+}
+
 section {
   margin: 0;
   width: 100%;
@@ -50,9 +54,18 @@ article {
     margin-top: 0px;
   }
 }
+.contentwrapper {
+  overflow: scroll;
+}
+main {
+  height: 600px;
+}
 
 .column {
   @include float(left);
   @include clearfix;
   margin: 0 20px 20px 0;
+  //display: inline-block;
+  //vertical-align: top;
+  //white-space: nowrap;
 }

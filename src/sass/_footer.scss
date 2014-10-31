@@ -5,7 +5,12 @@
 footer {
   @include background-image(linear-gradient($gray-darker, black));
   clear: both;
-//  width: 3000px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 60px;
   text-transform: uppercase;
   color:$link-color-default;
   font-size: $font-size-base;
@@ -13,15 +18,11 @@ footer {
   background-color: black;
   nav {
     border: 1px solid transparent;
-    &:before {
-      content: " ";
-      display: table;
-    }
   }
   ul {
     display: table;
     vertical-align: middle;
-    margin: 0;
+    margin: .8em 0;
     float: none;
     &:before {
       content: " ";
@@ -30,25 +31,21 @@ footer {
   }
   li {
     display: table-cell;
-    text-align: center;
+    //text-align: center;
     padding-bottom: 0;
     margin: 0;
-    height: 60px;
-    line-height: 58px;
-    //float: left;
+    height: 30px;
     text-tranform: uppercase;
-    width: 100px;
-    border-right: 1px solid $link-color-default;
-    border-right-color: $link-color-default;
   }
   a {
     color: $link-color-default;
     display: block;
     padding: 0 16px;
     white-space: nowrap;
-    height: 60px;
+    border-right: 4px solid $link-color-default;
+    border-right-color: $link-color-default;
     //line-height: 58px;
-    font-size: 30px;
+    font-size: $font-size-base;
     &:hover,
     &:active {
       color: $link-color-active;

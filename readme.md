@@ -10,6 +10,11 @@
 
 	./starte-db
 
+### Start der Datenbank und des Nodeservers im Übungsverzeichnis
+
+	sh ./mdb.sh
+	sh ./njs.sh
+
 ---
 
 ## Ü CSS (2), Fragen

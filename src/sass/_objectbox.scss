@@ -4,17 +4,17 @@
 
 .object {
   @include box(100%, 0 20px 15px, $gray-lighter, $white);
-  max-width: 500px;
+  max-width: 300px;
+  position: relative;
   h2 {
     @include box-dashed-heading(2px, $lighter-text-color);
-    position: relative;
-    > input {
-      display: inline;
-      position: absolute;
-      top: 26px;
-      right: 15px;
-      width: 19%;
-    }
+  }
+  > input {
+    display: inline;
+    position: absolute;
+    top: 26px;
+    right: 15px;
+    width: 19%;
   }
   figure {
     margin: 0px;

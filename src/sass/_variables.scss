@@ -37,6 +37,7 @@ $font-size-base: 20px !default;                        // 30pt/2
 $font-size-small: 13px !default;                       // 20pt/2
 
 $font-size-h1: floor($font-size-base * 2) !default;    // 40px 60pt/2
+$font-size-small-h1: floor($font-size-base * 1.5) !default;    // 30px
 $font-size-h2: floor($font-size-base * 1.5) !default; // 30px eigene Modifizierung! (original: 40pt/2)
 $font-size-small-h2: $font-size-base !default;         // 20px 30pt/2
 

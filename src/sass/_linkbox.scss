@@ -2,7 +2,7 @@
 // Linkbox: Verknuepfungen
 // --------------------------------------------------
 
-#verknuepfungen {
+.verknuepfungen {
   @include box(360px, 0 20px 0, $lighter-text-color, none);
   border: 1px dashed $lighter-text-color;
   h2 {

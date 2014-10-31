@@ -2,7 +2,7 @@
 // Introbox: Box fuer Einfuehrungstext
 // --------------------------------------------------
 
-#einfuehrungstext {
+.einfuehrungstext {
   @include box(600px, 0 30px 20px, $contrast-text-color, $primary-color);
   line-height: 27px;
   h2 {

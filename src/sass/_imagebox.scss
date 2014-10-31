@@ -2,7 +2,7 @@
 // Imagebox: Zeitdokumente
 // --------------------------------------------------
 
-#zeitdokumente {
+.zeitdokumente {
   @include box(360px, 0 20px 10px, $lightest-text-color, $darker-bg-color);
   height: auto;
 
