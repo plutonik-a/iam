@@ -55,7 +55,7 @@ gulp.task('images', function() {
   return gulp.src(source + 'img/**/*')
     .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
     .pipe(gulp.dest(dest + 'img'))
-    .pipe(notify({ message: 'Images task complete' }))
+    //.pipe(notify({ message: 'Images task complete' }))
     .pipe(connect.reload())
 });
 
@@ -80,8 +80,7 @@ gulp.task('clean', function() {
 
 // build distribution package
 gulp.task('build', ['clean'], function() {
-  gulp.start('styles', 'images', 'copy');
-  //gulp.start('styles', 'scripts', 'images', 'copy');
+  gulp.start('styles', 'scripts', 'images', 'copy');
 });
 
 // Default task
@@ -96,7 +95,7 @@ gulp.task('watch', function() {
   gulp.watch(source + 'sass/**/*.scss', ['styles']);
 
   // Watch Javascript source files
-  //gulp.watch(source + 'js/**/*.js', ['scripts']);
+  gulp.watch(source + 'js/**/*.js', ['scripts']);
 
   // Watch image files
   gulp.watch(source + 'img/**/*', ['images']);
