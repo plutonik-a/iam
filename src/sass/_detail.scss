@@ -4,6 +4,8 @@
 
 .detail {
   background: $white;
+  //opacity: 0.0;
+  //transition: opacity 2s;
 
   h1 {
     font-family: $font-family-sans-bold;
@@ -14,13 +16,15 @@
     margin-right: 20px;
     padding-bottom: 15px;
   }
+/*
   > section {
-    width: 400px;
+    //width: 400px;
     margin: 0 auto;
   }
+*/
   .content {
     width: 400px;
-    height: 600px;
+    height: auto;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -41,13 +45,14 @@
       overflow-x: hidden;
       overflow-y: scroll;
       background-color: $white;
-      width: 375px;
+      width: 100%;
       border-radius: 0;
     }
   }
   .contentfragment {
-    max-height: 600px;
-    overflow-y: scroll;
+    //max-height: 600px;
+    overflow: scroll;
+    padding: 20px;
   }
   .more {
     display: none;

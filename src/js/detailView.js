@@ -2,19 +2,42 @@
  * Created by alex on 29.10.14.
  */
 
-// Wenn button geklickt wird
-// dann setze noch class="dateil" für element section .contentwrapper
-// Elemente .excerpt und .more finden
-// EventListener darauf anwenden
+/**
+ * Immediate function: Wird sofort aufgerufen. Der
+ * Kontext kann sich ändern, ob nun window oder was anderes.
+ * Im Browser ist es immer 'window'.
+ * In node.js ist es der global scope, oder sogar der module scope.
+ * Kapselt die Variablen und Funktionen (vom äußeren Kontext) ab
+ * damit es keine Kollisionen geben kann, z.B. mit mehrfacher
+ * Variablenbenutzung im umterschiedlichen Kontext.
+ */
+(function () {
+    /**
+     * Öffnet die detail view
+     * @param event
+     */
+    function handleLinkListItemClick (event) {
+        console.log("Link wurde angewählt.");
+        // Verhindert in diesem Fall das Springen nach oben
+        // an den Fensteranfang wegen a href="#"
+        event.preventDefault();
+        document.body.classList.toggle('detail', true);
+    }
+    window.linkListe = document.querySelectorAll('a.more');
+    for (var i = 0; i < linkListe.length; ++i) {
+        var item = linkListe[i];
+        item.addEventListener("click", handleLinkListItemClick);
+    }
 
-
-// function für fadeOut und fadeIn
-// oder zum Setzen für class="detail" schreiben
-
-
-// wenn Button "zurück" geklickt wird,
-// entferne class="detail"
-
-
-// element.classList.toggle('classToBeRemoved', false);
-// element.classList.toggle('detail', true);
+    /**
+     * Schließt die die detail view
+     * @param event
+     */
+    function handleBackLinkClick (event) {
+        console.log("Zurück.");
+        event.preventDefault();
+        document.body.classList.toggle('detail', false);
+    }
+    window.backLink = document.querySelector('header a');
+    backLink.addEventListener("click", handleBackLinkClick);
+})();
