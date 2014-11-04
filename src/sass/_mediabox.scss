@@ -8,11 +8,25 @@
   font-weight: 100;
   line-height: 30px;
   margin: 0 0px 20px 0;
+  position: relative;
   h2 {
     @extend .box-list-heading;
     color: $primary-color;
     font-family: $font-family-sans-serif;
+    a {
+      color: inherit;
+    }
   }
+  i:after {
+    content:'';
+    background: url("../img/Pfeil02.png") no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    top: 14px;
+    right: 20px;
+  }
+
   ul {
     padding: 0px;
     margin: 0px;

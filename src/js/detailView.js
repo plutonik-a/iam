@@ -13,31 +13,65 @@
  */
 (function () {
     /**
+     * link handler factory
+     * @param {HTMLElement} element
+     * @param {Function} func
+     * @returns {Function}
+     */
+    function getLinkHandler(element, func) {
+        return function (event) {
+            var classList = element.classList;
+            event.preventDefault();
+            classList.add('fadeout');
+            var listener = element.addEventListener('transitionend', function () {
+                classList.remove('fadeout');
+                classList.add('fadein');
+                func(element);
+                element.removeEventListener(listener);
+            });
+        }
+    }
+
+    /**
      * Öffnet die detail view
      * @param event
      */
-    function handleLinkListItemClick (event) {
-        console.log("Link wurde angewählt.");
-        // Verhindert in diesem Fall das Springen nach oben
-        // an den Fensteranfang wegen a href="#"
-        event.preventDefault();
-        document.body.classList.toggle('detail', true);
-    }
-    window.linkListe = document.querySelectorAll('a.more');
-    for (var i = 0; i < linkListe.length; ++i) {
-        var item = linkListe[i];
-        item.addEventListener("click", handleLinkListItemClick);
+    function intoDetail(element) {
+        element.classList.remove('overview');
+        element.classList.add('detail');
     }
 
     /**
      * Schließt die die detail view
      * @param event
      */
-    function handleBackLinkClick (event) {
-        console.log("Zurück.");
-        event.preventDefault();
-        document.body.classList.toggle('detail', false);
+    function backToOverview(element) {
+        element.add('overview');
+        element.remove('detail');
     }
-    window.backLink = document.querySelector('header a');
+
+    /**
+     * ELEMENTE MIT DENEN GEARBEITET WIRD
+     * @type {Node}
+     */
+    var contentWrapper = document.querySelector('section.contentwrapper');
+    var backLink = document.querySelector('header a');
+    var linkListe = document.querySelectorAll('a.more');
+
+    /**
+     * baue link handler
+     */
+    var handleLinkListItemClick = getLinkHandler(contentWrapper, intoDetail);
+    var handleBackLinkClick = getLinkHandler(contentWrapper, backToOverview);
+
+    /**
+     * attach click event listeners
+     */
+    for (var i = 0, l = linkListe.length; i < l; ++i) {
+        var item = linkListe[i];
+        item.addEventListener("click", handleLinkListItemClick);
+    }
     backLink.addEventListener("click", handleBackLinkClick);
+
 })();
+

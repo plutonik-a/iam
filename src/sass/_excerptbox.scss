@@ -27,6 +27,11 @@
   .speaker {
     text-transform: uppercase;
   }
+  .description-text,
+  .speaker,
+  .text {
+    display: block;
+  }
 
   .more {
     color: $primary-color;

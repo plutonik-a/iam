@@ -4,7 +4,7 @@
 
 .object {
   @include box(100%, 0 20px 15px, $gray-lighter, $white);
-  max-width: 300px;
+  max-width: 360px;
   position: relative;
   h2 {
     @include box-dashed-heading(2px, $lighter-text-color);
@@ -18,7 +18,7 @@
   }
   figure {
     margin: 0px;
-    padding: 20px 0 0;
+    padding: 25px 0 0;
   }
   .object-image {
     width: 100%;

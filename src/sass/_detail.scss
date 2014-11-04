@@ -4,8 +4,6 @@
 
 .detail {
   background: $white;
-  //opacity: 0.0;
-  //transition: opacity 2s;
 
   h1 {
     font-family: $font-family-sans-bold;
@@ -16,12 +14,6 @@
     margin-right: 20px;
     padding-bottom: 15px;
   }
-/*
-  > section {
-    //width: 400px;
-    margin: 0 auto;
-  }
-*/
   .content {
     width: 400px;
     height: auto;
@@ -58,4 +50,12 @@
     display: none;
   }
 }
+.fadein {
+  opacity: 1.0;
+  transition: opacity 2s;
+}
 
+.fadeout {
+  opacity: 0.0;
+  transition: opacity 2s;
+}
