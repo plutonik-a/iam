@@ -11,10 +11,7 @@ footer {
   z-index: 1000;
   width: 100%;
   height: 60px;
-  text-transform: uppercase;
-  color:$link-color-default;
-  font-size: $font-size-base;
-  font-family: $font-family-sans-bold;
+  color: $link-color-default;
   background-color: black;
   nav {
     border: 1px solid transparent;
@@ -31,11 +28,9 @@ footer {
   }
   li {
     display: table-cell;
-    //text-align: center;
     padding-bottom: 0;
     margin: 0;
     height: 30px;
-    text-tranform: uppercase;
   }
   a {
     color: $link-color-default;
@@ -43,9 +38,6 @@ footer {
     padding: 0 16px;
     white-space: nowrap;
     border-right: 4px solid $link-color-default;
-    border-right-color: $link-color-default;
-    //line-height: 58px;
-    font-size: $font-size-base;
     &:hover,
     &:active {
       color: $link-color-active;

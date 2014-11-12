@@ -21,7 +21,7 @@
   .more {
     color: $contrast-text-color;
     &:before {
-      @include more(url("../img/Pfeil_weiss01.png") no-repeat);
+      @include more(url("../img/Pfeil_weiss01.png"));
     }
     span {
       padding: 0 0 0 60px;

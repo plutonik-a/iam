@@ -8,8 +8,6 @@ header {
   height: 60px;
   text-transform: uppercase;
   color: $link-color-default;
-  font-size: $font-size-base;
-  font-family: $font-family-sans-bold;
   background-color: black;
   position: fixed;
   top: 0;
@@ -19,14 +17,10 @@ header {
   a {
     color: inherit;
     padding: 0 0 0 20px;
-    line-height: 25px;
     position: absolute;
-    font-weight: $font-weight-bold;
     &:before {
       content:'←';
       padding-right: 10px;
-      font-size: 40px;
-      line-height: 62px;
       position: relative;
       top: 6px;
       left: 0px;

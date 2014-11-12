@@ -17,6 +17,31 @@ h2 {
   line-height: 40px;
 }
 
+header {
+  font-size: $font-size-base;
+  font-family: $font-family-sans-bold;
+  a {
+    font-weight: $font-weight-bold;
+    line-height: 25px;
+    &:before {
+      font-size: 40px;
+      line-height: 62px;
+    }
+  }
+}
+
+footer {
+  font-size: $font-size-base;
+  font-family: $font-family-sans-bold;
+  text-transform: uppercase;
+  li {
+    text-tranform: uppercase;
+  }
+  a {
+    font-size: $font-size-base;
+  }
+}
+
 .einfuehrungstext {
   font-family: $font-family-bold;
   h2 {
