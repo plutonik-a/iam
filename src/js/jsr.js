@@ -98,7 +98,7 @@ function createZeitdokumente(contentItem) {
 	zeitdokumente.hidden = false;
 	// we set the src attribute of the img
 	//document.querySelector("#zeitdokumente img").setAttribute("src", contentItem.src);
-    zeitdokumente.querySelector("#zeitdokumente img").setAttribute("src", contentItem.src);
+    zeitdokumente.querySelector("img").setAttribute("src", contentItem.src);
 	// ... and the caption
 	zeitdokumente.getElementsByTagName("figcaption")[0].textContent = contentItem.title;
 }

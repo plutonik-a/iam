@@ -66,10 +66,10 @@ gulp.task('copy', function() {
     .pipe(gulp.dest(dest))
     .pipe(connect.reload());
 
-    // detail views
-    //gulp.src(source + 'views/**/*')
-    //    .pipe(gulp.dest(dest + 'views'))
-    //    .pipe(connect.reload());
+    // content
+    gulp.src(source + 'content/**/*')
+        .pipe(gulp.dest(dest + 'content '))
+        .pipe(connect.reload());
 });
 
 // Clean
