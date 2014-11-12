@@ -67,9 +67,9 @@ gulp.task('copy', function() {
     .pipe(connect.reload());
 
     // detail views
-    gulp.src(source + 'detailviews/**/*')
-        .pipe(gulp.dest(dest + 'detailviews'))
-        .pipe(connect.reload());
+    //gulp.src(source + 'views/**/*')
+    //    .pipe(gulp.dest(dest + 'views'))
+    //    .pipe(connect.reload());
 });
 
 // Clean
