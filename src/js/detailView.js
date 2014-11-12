@@ -13,7 +13,7 @@
  */
 (function () {
     /**
-     * link handler factory
+     * Link handler factory (link handler template)
      * @param {HTMLElement} element
      * @param {Function} func
      * @returns {Function}
@@ -46,12 +46,12 @@
      * @param event
      */
     function backToOverview(element) {
-        element.add('overview');
-        element.remove('detail');
+        element.classList.add('overview');
+        element.classList.remove('detail');
     }
 
     /**
-     * ELEMENTE MIT DENEN GEARBEITET WIRD
+     * Elemente mit denen gearbeitet wird
      * @type {Node}
      */
     var contentWrapper = document.querySelector('section.contentwrapper');
@@ -59,13 +59,13 @@
     var linkListe = document.querySelectorAll('a.more');
 
     /**
-     * baue link handler
+     *  Baue link handler
      */
     var handleLinkListItemClick = getLinkHandler(contentWrapper, intoDetail);
     var handleBackLinkClick = getLinkHandler(contentWrapper, backToOverview);
 
     /**
-     * attach click event listeners
+     *  Füge click event listeners hinzu
      */
     for (var i = 0, l = linkListe.length; i < l; ++i) {
         var item = linkListe[i];
