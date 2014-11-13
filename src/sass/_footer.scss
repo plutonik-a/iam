@@ -39,7 +39,8 @@ footer {
     white-space: nowrap;
     border-right: 4px solid $link-color-default;
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       color: $link-color-active;
     }
   }
