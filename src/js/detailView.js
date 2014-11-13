@@ -1,5 +1,5 @@
 /**
- * Created by alex on 29.10.14.
+ * @author Alexandra von Criegern, https://github.com/plutonik-a
  */
 
 /**
@@ -72,6 +72,6 @@
         item.addEventListener("click", handleLinkListItemClick);
     }
     backLink.addEventListener("click", handleBackLinkClick);
-
+    document.addEventListener('DOMContentLoaded', initialiseView);
 })();
 
