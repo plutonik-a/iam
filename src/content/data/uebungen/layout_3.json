@@ -7,6 +7,12 @@
 			"render_async": true,
 			"type": "textauszug",
 			"src": "content/texte/die_umsiedlerin.html"
+		},
+		{
+			"render_container": "right",
+			"render_async": true,
+			"type": "list",
+			"src": "content/texte/die_umsiedlerin.html"
 		}
 	]
 }

@@ -3,10 +3,11 @@
 	"title": "Die Umsiedlerin",
 	"content_items": [
 		{
-			"render_container": "left",
-			"type": "objekt",
-			"src": "content/img/hm_als_fondrak_1961.jpg",
-			"description": "Kommentar zum Bild"
+            "render_container": "left",
+            "type": "objekt",
+            "src": "/content/img/360-443.jpg",
+            "alt": "A cute placeholder kitten.",
+            "description": "This is a cute placeholder kitten."
 		}, {
 			"render_container": "middle",
 			"render_async": true,
