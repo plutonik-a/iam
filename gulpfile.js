@@ -68,7 +68,7 @@ gulp.task('copy', function() {
 
     // content
     gulp.src(source + 'content/**/*')
-        .pipe(gulp.dest(dest + 'content '))
+        .pipe(gulp.dest(dest + 'content'))
         .pipe(connect.reload());
 });
 
