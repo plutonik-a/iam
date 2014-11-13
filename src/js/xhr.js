@@ -39,9 +39,9 @@ function xhr(method, requestpath, obj, onsuccess, onerror) {
 					// in case we have a request code of 200 OK, we execute the onsuccess function passed as an argument
 					if (xmlhttp.status == 200) {
 						// show how to access a response header
-						console.log("response Content-Type header is: " + xmlhttp.getResponseHeader("Content-type"));
-						console.log("responseType is: " + xmlhttp.responseType);
-						console.log("response is: " + xmlhttp.response);
+						//console.log("response Content-Type header is: " + xmlhttp.getResponseHeader("Content-type"));
+						//console.log("responseType is: " + xmlhttp.responseType);
+						//console.log("response is: " + xmlhttp.response);
 
 						if (onsuccess) {
 							// the function will be passed the request object to be free with regard to reading out its content
