@@ -15,6 +15,9 @@
     top: 26px;
     right: 15px;
     width: 19%;
+    &:focus {
+      outline: none;
+    }
   }
   figure {
     margin: 0px;
