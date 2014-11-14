@@ -33,19 +33,18 @@ $font-family-sans-light: "Avenir Roman", sans-serif;
 $font-family-serif: "Marion Regular", serif;
 $font-family-bold: "Marion Bold", serif;
 
-$font-size-base: 20px !default;                        // 30pt/2
-$font-size-small: 13px !default;                       // 20pt/2
+$font-size-base: 20px !default;     // 30pt/2
+$font-size-small: 16px !default;    // 20pt/2
 
-$font-size-h1: floor($font-size-base * 2) !default;    // 40px 60pt/2
+$font-size-h1: floor($font-size-base * 1.85) !default;         // 37px, eigene Modifizierung (60pt/2)
 $font-size-small-h1: floor($font-size-base * 1.5) !default;    // 30px
-$font-size-h2: floor($font-size-base * 1.5) !default; // 30px eigene Modifizierung! (original: 40pt/2)
-$font-size-small-h2: $font-size-base !default;         // 20px 30pt/2
+$font-size-h2: floor($font-size-base * 1.5) !default;          // 30px eigene Modifizierung! (original: 40pt/2)
+$font-size-small-h2: floor($font-size-base * 1.2) !default;    // 20px 30pt/2
 
 $font-weight-normal: 300;
 $font-weight-bold: 400;
 
 // Components
-
 $height-header: 60px;
 $height-footer: 60px;
 $height-inner-content: 100%;
