@@ -11,10 +11,23 @@ h1 {
   font-size: $font-size-h1;
   font-weight: $font-weight-normal;
   font-style: normal;
+  @media screen and (max-width: 560px) {
+    font-size: $font-size-small-h1;
+  }
 }
 
 h2 {
   line-height: 40px;
+  @media screen and (max-width: 560px) {
+    font-size: $font-size-small-h2;
+  }
+}
+
+p {
+  font-size: $font-size-base;
+  @media screen and (max-width: 560px) {
+    font-size: $font-size-small;
+  }
 }
 
 header {
@@ -22,10 +35,10 @@ header {
   font-family: $font-family-sans-bold;
   a {
     font-weight: $font-weight-bold;
-    line-height: 25px;
+    line-height: 27px;
     &:before {
       font-size: 40px;
-      line-height: 62px;
+      line-height: 28px;
     }
   }
 }
