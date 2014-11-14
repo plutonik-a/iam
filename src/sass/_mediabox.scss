@@ -2,8 +2,22 @@
 // Media And Comment Boxes
 // --------------------------------------------------
 
+.mediaboxes {
+  width: 100%;
+  @media screen and (max-width: 400px) {
+    width: 91vw;
+    padding-right: 0;
+  }
+  @media screen and (min-width: 401px) {
+    padding-right: 1.7em;
+  }
+}
+
 .mediabox {
-  @include box(360px, 0 20px 10px, $gray-lighter, $gray-darker);
+  @include box(100%, 0 20px 10px, $gray-lighter, $gray-darker);
+  @media screen and (max-width: 400px) {
+    width: 80vw;
+  }
   font-family: $font-family-sans-light;
   font-weight: 100;
   line-height: 30px;

@@ -2,34 +2,47 @@
 // Basic Styles
 // --------------------------------------------------
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: $body-bg;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
 }
 
 .contentwrapper {
-  margin-top: 60px;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  @media sreen and (max-height: 600px){
+    max-height: 80vh;
+  }
 }
 
 section {
   margin: 0;
   width: 100%;
-  overflow: scroll !important;
+  overflow-x: scroll !important;
 }
 
 .content {
   overflow-x: visible;
-  width: 3000px;
+  height: 100%;
+  width: auto;
   position: relative;
-  top: 0;
-  left: 0;
+  white-space: nowrap;
 }
+
 
 h1 {
   color: $dark-text-color;
-  margin: 30px 0 30px 20px;
+  margin-bottom: 15px;
+  padding: 20px 0 0 20px;
   text-transform: uppercase;
-  //-moz-user-select: none;
-  //user-select: none;
 }
 
 h2 {
@@ -49,29 +62,55 @@ a {
 }
 
 article {
-  margin: 15px 15px 15px 0;
+  margin: 0 20px 0 0;
   &:first-child {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 .contentwrapper {
   overflow: scroll;
 }
-main {
-  height: 600px;
-}
 
 .column {
-  @include float(left);
-  @include clearfix;
-  margin: 0 20px 20px 0;
-  //display: inline-block;
-  //vertical-align: top;
-  //white-space: nowrap;
+  max-width: 400px;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  flex: 1 1 auto;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1px;
+  margin-right: 20px;
+  @media all and (max-width: 400px) {
+    max-width: calc(95vw - 20px);
+  }
+}
+
+aside {
+  margin: 0 0 20px 0;
 }
 
 .hidden {
   display: none;
   width: 0;
   height: 0;
+}
+
+.inner-flex {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.flexed-header {
+  flex: 0 0 70px;
+  flex-direction: column;
+  padding: 1px;
+}
+
+.inner-flexed {
+  flex: 1;
+  flex-direction: column;
+  padding: 1px;
+  align-self: stretch;
 }
