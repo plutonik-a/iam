@@ -5,7 +5,7 @@
         {
             "render_container": "left",
             "type": "objekt",
-            "src": "/content/img/360-443.jpg",
+            "src": "/content/img/360-400.jpg",
             "alt": "A cute placeholder kitten.",
             "description": "This is a cute placeholder kitten."
         },
@@ -35,12 +35,12 @@
                 {
                     "mediatype": "video/ogg",
                     "title": "Über Tiere und Menschen",
-                    "src": "/content/mov/hm_tiere_und_menschen.ogv"
+                    "src": "/content/mov/test-track.mp4"
                 },
                 {
                     "mediatype": "audio/ogg",
                     "title": "Demo Alexanderplatz 1989",
-                    "src": "/content/wav/4_november_1989_alexanderplatz_berlin_ddr_ausschnitt.ogg"
+                    "src": "/content/wav/test-track.ogg"
                 }
             ]
         }

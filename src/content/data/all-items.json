@@ -47,12 +47,12 @@
                 {
                     "mediatype": "video/ogg",
                     "title": "Über Tiere und Menschen",
-                    "src": "/content/mov/hm_tiere_und_menschen.ogv"
+                    "src": "/content/mov/test-track.mp4"
                 },
                 {
                     "mediatype": "audio/ogg",
                     "title": "Demo Alexanderplatz 1989",
-                    "src": "/content/wav/4_november_1989_alexanderplatz_berlin_ddr_ausschnitt.ogg"
+                    "src": "/content/wav/test-track.ogg"
                 }
             ]
         },
