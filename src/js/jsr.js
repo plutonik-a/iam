@@ -1,5 +1,6 @@
 /**
- * @author Jörn Kreutel
+ * @authors Jörn Kreutel,
+ * Alexandra von Criegern, https://github.com/plutonik-a
  */
 
 var zeitdokumente,
@@ -54,6 +55,7 @@ function initialiseView() {
     medienverweise = bySelector(".mediaboxes");
     excerpt = bySelector(".excerpt");
     merkliste = bySelector(".list");
+    tooltip = byId("selectedObject");
 
     // set the switch function as onlick on the config_switch element and display the config
     config_switch = document.getElementById("config_switch");
@@ -100,9 +102,6 @@ function loadContentAndCreateLayout() {
         // we read out the title and set it
         setTitle(jsonContent.title);
 
-        showTooltip(jsonContent.alt);
-        console.log(jsonContent.alt);
-
         // the content is a list of json objects. log its length
         console.log("length of content items loaded from server is: " + jsonContent.content_items.length);
 
@@ -145,12 +144,6 @@ function setTitle(title) {
     title = document.getElementById("topic_title").textContent;
 }
 
-function showTooltip(description) {
-    description = document.getElementById("selectedObject").textContent;
-    tooltip = byId("selectedObject").addEventListener('click', showTooltip);
-    console.log('Tooltip: ' + tooltip);
-}
-
 /**
  *
  * @param contentItem
@@ -175,6 +168,9 @@ function createObject(contentItem) {
     show(objekt);
     // we set the src attribute of the img
     objekt.querySelector("img").setAttribute("src", contentItem.src);
+    tooltip.addEventListener('click', function() {
+        alert(contentItem.description);
+    });
 }
 
 /**
