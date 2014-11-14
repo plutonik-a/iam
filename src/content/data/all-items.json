@@ -9,6 +9,13 @@
             "title": "Programmheft zur Uraufführung"
         },
         {
+            "render_container": "left",
+            "type": "objekt",
+            "src": "/content/img/360-443.jpg",
+            "alt": "This is a cute placeholder kitten.",
+            "description": "This is a cute placeholder kitten."
+        },
+        {
             "render_container": "middle",
             "render_async": true,
             "type": "einfuehrungstext",
