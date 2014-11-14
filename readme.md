@@ -2,6 +2,17 @@
 
 ## Benutzung
 
+### Prerequisites
+
+#### npm
+
+	npm install
+
+#### gulp
+
+	npm install gulp
+	https://www.npmjs.org/package/gulp
+
 ### Start des Servers und Auslieferung der Dateien ins 'dist' Verzeichnis
 
 	gulp serve
