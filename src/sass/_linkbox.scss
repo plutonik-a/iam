@@ -3,8 +3,8 @@
 // --------------------------------------------------
 
 .verknuepfungen {
-  @include box(360px, 0 20px 0, $lighter-text-color, none);
-  border: 1px dashed $lighter-text-color;
+  @include box(360px, 0 20px 0, $text-mid-color, none);
+  border: 1px dashed $text-mid-color;
   h2 {
     @extend .box-list-heading;
   }
@@ -15,11 +15,15 @@
   li {
     padding: 20px 0;
     margin: 0;
-    border-top: 1px dashed $lighter-text-color;
+    border-top: 1px dashed $text-mid-color;
     a {
       color: inherit;
       padding: 0;
       margin: 0;
+      &:hover,
+      &:active {
+        color: $link-color-active;
+      }
     }
   }
 }

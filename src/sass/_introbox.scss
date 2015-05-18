@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 .einfuehrungstext {
-  @include box(600px, 0 30px 20px, $contrast-text-color, $primary-color);
+  @include box(600px, 0 30px 20px, $text-contrast-color, $box-bg-accent-color);
   line-height: 27px;
   h2 {
     line-height: 40px;
@@ -19,7 +19,7 @@
 
   // Component for 'Read More'- Link plus arrow icon
   .more {
-    color: $contrast-text-color;
+    color: $text-contrast-color;
     &:before {
       @include more(url("../img/Pfeil_weiss01.png"));
     }

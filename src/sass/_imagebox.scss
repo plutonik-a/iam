@@ -3,12 +3,12 @@
 // --------------------------------------------------
 
 .zeitdokumente {
-  @include box(360px, 0 20px 10px, $lightest-text-color, $darker-bg-color);
+  @include box(360px, 0 20px 10px, $text-light-color, $box-bg-dark-color);
   height: auto;
 
   h2 {
     @extend .box-list-heading;
-    @include box-dashed-heading(1px, $lightest-text-color);
+    @include box-dashed-heading(1px, $text-light-color);
   }
 
   figure {
@@ -16,7 +16,7 @@
     border-top: 0;
     border-right: 0;
     border-left: 0;
-    border-bottom: 10px dashed $primary-color;
+    border-bottom: 10px dashed $accent-color;
     border-image: url("../img/Strich01.png") 0 25 300 7 stretch;
   }
 

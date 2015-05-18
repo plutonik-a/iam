@@ -6,10 +6,10 @@
   background: $white;
 
   h1 {
-    font-family: $font-family-sans-bold;
-    font-weight:$font-weight-bold;
-    color: $light-blue;
-    border-bottom: 3px dotted $light-blue;
+    font-family: $font-family-sans-serif;
+    font-weight: $font-weight-bold;
+    color: $accent-color;
+    border-bottom: 3px dotted $accent-color;
     margin-right: 20px;
     padding-bottom: 15px;
   }
@@ -36,7 +36,7 @@
       visibility: visible;
       overflow-x: hidden;
       overflow-y: scroll;
-      background-color: $white;
+      background-color: $box-bg-light-color;
       width: 100%;
       border-radius: 0;
       margin: auto auto;

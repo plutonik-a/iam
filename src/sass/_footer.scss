@@ -3,20 +3,16 @@
 // --------------------------------------------------
 
 footer {
-  //@include flex(1 60px);
-  //@include order(3);
   flex: 0 0 60px;
   flex-direction: column;
   justify-content: center;
   height: $height-footer;
-  @include background-image(linear-gradient($gray-darker, black));
-  //clear: both;
-  //position: fixed;
+  @include background-image(linear-gradient($gray, $black));
   bottom: 0;
   left: 0;
   z-index: 1000;
   width: 100%;
-  color: $link-color-default;
+  color: $text-color;
   background-color: black;
   overflow: scroll !important;
   white-space: nowrap;
@@ -40,11 +36,14 @@ footer {
     height: 30px;
   }
   a {
-    color: $link-color-default;
+    color: $menu-item-idle-color;
     display: block;
-    padding: 0 16px;
     white-space: nowrap;
-    border-right: 4px solid $link-color-default;
+    border-right: 4px solid $primary-color;
+    padding: 0 16px;
+    &:first-of-type {
+      padding: 0 16px 0 20px;
+    }
     &:hover,
     &:active,
     &:focus {

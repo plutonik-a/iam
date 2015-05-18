@@ -7,12 +7,12 @@ header {
   flex-direction: column;
   justify-content: center;
   height: 60px;
-  @include background-image(linear-gradient($gray-darker, black));
+  @include background-image(linear-gradient($box-bg-dark-color, $black));
   width: 100%;
   min-width: 100%;
   text-transform: uppercase;
-  color: $link-color-default;
-  background-color: black;
+  color: $menu-item-idle-color;
+  background-color: $black;
   position: relative;
   top: 0;
   left: 0;
@@ -22,20 +22,20 @@ header {
     color: inherit;
     position: relative;
     top: 0;
-    left: 0;
-    margin: 20px 0 0 56px;
+    left: 26px;
+    margin: 20px 0 0 20px;
     display: block;
     height: 40px;
-    &:before {
-      content:'←';
-      padding-right: 10px;
-      position: absolute;
-      top: 0;
-      left: -40px;
-    }
+
     &:hover,
     &:active {
       color: $link-color-active;
     }
+  }
+  i {
+    position: absolute;
+    top: 2px;
+    left: -29px;
+    font-size: 22px;
   }
 }

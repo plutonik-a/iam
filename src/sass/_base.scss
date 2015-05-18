@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: $body-bg;
+  background-color: $body-bg-color;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -39,7 +39,7 @@ section {
 
 
 h1 {
-  color: $dark-text-color;
+  color: $text-mid-color;
   margin-bottom: 15px;
   padding: 20px 0 0 20px;
   text-transform: uppercase;

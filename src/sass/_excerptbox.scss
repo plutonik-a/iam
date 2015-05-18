@@ -3,8 +3,9 @@
 // --------------------------------------------------
 
 .excerpt {
-  @include box(100%, 0 20px 10px, $dark-contrast-text-color, $white);
+  @include box(100%, 0 20px 10px, $text-dark-color, $box-bg-light-color);
   font-family: $font-family-serif;
+  font-weight: $font-weight-bold;
 
   // Height of excerpt-text
   .contentfragment {
@@ -12,8 +13,8 @@
   }
 
   h2 {
-    @include box-dashed-heading(2px, $primary-color);
-    color: $primary-color;
+    @include box-dashed-heading(2px, $accent-color);
+    color: $accent-color;
     font-family: $font-family-sans-serif;
   }
 
@@ -34,7 +35,7 @@
   }
 
   .more {
-    color: $primary-color;
+    color: $accent-color;
     &:before {
       @include more(url("../img/Pfeil02.png"));
     }
