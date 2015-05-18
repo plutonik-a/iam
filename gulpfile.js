@@ -1,24 +1,24 @@
 // Load plugins
 var gulp = require('gulp')
-  , compass = require('gulp-compass')
-  , autoprefixer = require('gulp-autoprefixer')
-  , minifycss = require('gulp-minify-css')
-  , jshint = require('gulp-jshint')
-  , uglify = require('gulp-uglify')
-  , imagemin = require('gulp-imagemin')
-  , rename = require('gulp-rename')
-  , clean = require('gulp-clean')
-  , concat = require('gulp-concat')
-  , notify = require('gulp-notify')
-// deactivate caching until issue is resolved
-//  , cache = require('gulp-cache')
-  , connect = require('gulp-connect')
-  , _ = require('lodash')
+    , compass = require('gulp-compass')
+    , autoprefixer = require('gulp-autoprefixer')
+    , minifycss = require('gulp-minify-css')
+    , jshint = require('gulp-jshint')
+    , uglify = require('gulp-uglify')
+    , imagemin = require('gulp-imagemin')
+    , rename = require('gulp-rename')
+    , clean = require('gulp-clean')
+    , concat = require('gulp-concat')
+    , notify = require('gulp-notify')
+    // deactivate caching until issue is resolved
+    //  , cache = require('gulp-cache')
+    , connect = require('gulp-connect')
+    , _ = require('lodash')
 
 // set paths
-  , source = 'src/'
-  , dest = 'dist/'
-  ;
+    , source = 'src/'
+    , dest = 'dist/'
+    ;
 
 // Styles
 gulp.task('styles', function() {
@@ -52,56 +52,61 @@ gulp.task('scripts', function() {
 
 // Images
 gulp.task('images', function() {
-  return gulp.src(source + 'img/**/*')
-    .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-    .pipe(gulp.dest(dest + 'img'))
-    //.pipe(notify({ message: 'Images task complete' }))
-    .pipe(connect.reload())
+    return gulp.src(source + 'img/**/*')
+        .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+        .pipe(gulp.dest(dest + 'img'))
+        //.pipe(notify({ message: 'Images task complete' }))
+        .pipe(connect.reload())
 });
 
 // copy html files
 gulp.task('copy', function() {
-  // main documentation index html
-  gulp.src(source + 'index.html')
-    .pipe(gulp.dest(dest))
-    .pipe(connect.reload());
+    // main documentation index html
+    gulp.src(source + 'index.html')
+        .pipe(gulp.dest(dest))
+        .pipe(connect.reload());
 
     // content
     gulp.src(source + 'content/**/*')
         .pipe(gulp.dest(dest + 'content'))
         .pipe(connect.reload());
+
+    // font
+    gulp.src(source + 'fonts/**/*')
+        .pipe(gulp.dest(dest + 'fonts'))
+        .pipe(connect.reload());
 });
 
 // Clean
 gulp.task('clean', function() {
-  return gulp.src(dest, {read: false})
-    .pipe(clean())
+    return gulp.src(dest, {read: false})
+        .pipe(clean())
 });
 
 // build distribution package
 gulp.task('build', ['clean'], function() {
-  gulp.start('styles', 'scripts', 'images', 'copy');
+    gulp.start('styles', 'scripts', 'images', 'copy');
 });
 
 // Default task
 gulp.task('default', function() {
-  gulp.start('build');
+    gulp.start('build');
 });
 
 // Watch
 gulp.task('watch', function() {
 
-  // Watch Sass source files
-  gulp.watch(source + 'sass/**/*.scss', ['styles']);
+    // Watch Sass source files
+    gulp.watch(source + 'sass/**/*.scss', ['styles']);
 
-  // Watch Javascript source files
-  gulp.watch(source + 'js/**/*.js', ['scripts']);
+    // Watch Javascript source files
+    gulp.watch(source + 'js/**/*.js', ['scripts']);
 
-  // Watch image files
-  gulp.watch(source + 'img/**/*', ['images']);
+    // Watch image files
+    gulp.watch(source + 'img/**/*', ['images']);
 
-  // Watch example files
-  gulp.watch(source + 'index.html', ['copy']);
+    // Watch example files
+    gulp.watch(source + 'index.html', ['copy']);
 });
 
 gulp.task('connect', function() {
