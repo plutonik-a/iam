@@ -5,7 +5,7 @@
   "contributors": [
     {
       "name": "Alexandra von Criegern",
-      "email": "a@von-c.de",
+      "email": "mail@von-c.de",
       "url": "alexandra-von-criegern.de"
     }
   ],
@@ -29,6 +29,7 @@
     "lodash": "^2.4.1"
   },
   "dependencies": {
+    //"gulp": "^3.8.11"
     "gulp": "^3.8.9"
   }
 }
