@@ -233,6 +233,7 @@ Eine Vorlage für die Verwendungvon setTimeout() finden Sie in der Umsetzung des
 ### XMLHttpRequest
 (...)
 
+# Vorgaben
 ## NJM
 ### NJM0 Vorbereitende Maßnahmen
 * Laden Sie die NodeJS Binaries aus dem Moodle und importieren Sie diese ebenfalls in Eclipse. Es wird ein Projekt Binrunnable erstellt.
@@ -244,11 +245,11 @@ Eine Vorlage für die Verwendungvon setTimeout() finden Sie in der Umsetzung des
 * Wählen Sie einen Titel aus. Ihnen sollte dann eine ‘leere Gesamtansicht’ für den betreffenden Titel angezeigt werden.
 * Falls Sie einen Fehler bekommen, dann ersetzen Sie im Skript webserver.js in den Implementierungsbeispielen die ip Variable im Aufruf von server.listen(ip,port durch den String 127.0.0.1 und starten Sie njs neu.
 
-#### Sonstiges
+#### Sonstiges#
 [Demovideo](https://connect.oncampus.de/p2231hw1w59/)
 
 ### Übung NJM1 Beispielanwendung
-Schauen Sie sich noch einmal das ‘Big Picture’ der Interaktion zwischen den Komponenten der Beispielanwendung in der [Beispielanwendung](http://moodle.oncampus.de/modules/ir493/onmod/IAMNJM/nodejs/grund.shtml) an.
+Schauen Sie sich noch einmal das ‘Big Picture’ der Interaktion zwischen den Komponenten in der [Beispielanwendung](http://moodle.oncampus.de/modules/ir493/onmod/IAMNJM/nodejs/grund.shtml) an.
 Versuchen Sie, den kompletten Durchlauf eines Aufrufs einer CRUD Methode nachzuvollziehen, beginnend mit der Ausführung einer Aktion durch den Nutzer auf Ebene der graphischen Nutzeroberfläche. Schauen Sie sich dafür die nachfolgend genannten Skripte und Funktionen an.
 
 ```webcontent/js/controller/TopicviewViewController.js```
@@ -337,9 +338,9 @@ Assoziieren Sie Objekt-Elemente auf Ebene der Datenbank mit den Topic-Ansichten 
 #### Bearbeitungshinweise
 * Anforderung 1 - 3: Die Funktionen in ```http2mdb.js``` stellen bereits die Funktionalität des partiellen Updates für die Hinzufügung von Elementen zu ```contentItems``` gemäß Anforderung 1 und das Löschen gemäß Anforderung 3 zur Verfügung. Um auf diese Funktionalität zuzgreifen, müssen Sie lediglich auf Ebene des browserseitig ausgeführten JavaScript Codes HTTP Requests der folgenden Form initiieren:
 
-	* Hinzufügung: ```PUT /topicviews/<topicid>/contentItems```und Übertragung des hinzuzufügenden Elements im Body des Requests. ```<topicid>``` identifiziert den Topicview, dessen ```contentItems``` Liste das Element hinzugefügt werden soll.
+	* Hinzufügung: ```PUT /topicviews/<topicid>/contentItems``` und Übertragung des hinzuzufügenden Elements im Body des Requests. ```<topicid>``` identifiziert den Topicview, dessen ```contentItems``` Liste das Element hinzugefügt werden soll.
 
-	* Löschen: ```DELETE /topicviews/<topicid>/contentItems/<elementtype>.``` Auch hier identifziert ```<topicid>``` den Topicview, auf dessen contentItems Liste zugegriffen werden soll. ```elementtype``` bezeichnet den Typ des Elements / der Elemente, die dabei aus ```contentItems`` entfernt werden sollen. In Ihrem Fall sieht die URL also wie folgt aus: ```/topicviews/<topicid>/contentItems/objekt```
+	* Löschen: ```DELETE /topicviews/<topicid>/contentItems/<elementtype>.``` Auch hier identifziert ```<topicid>``` den Topicview, auf dessen contentItems Liste zugegriffen werden soll. ```elementtype``` bezeichnet den Typ des Elements / der Elemente, die dabei aus ```contentItems``` entfernt werden sollen. In Ihrem Fall sieht die URL also wie folgt aus: ```/topicviews/<topicid>/contentItems/objekt```
 
 * Anforderung 3:  Für das Löschen, aber auch für das Auslesen oder die Aktualisierung eines Objekts benötigen Sie id des Objekts, die Sie aus der Objektreferenz aus ```contentItems``` auslesen können. Dafür steht Ihnen in ```TopicviewViewController.js``` die Funktion ```getObjektIdForTopicview()``` zur Verfügung.
 
