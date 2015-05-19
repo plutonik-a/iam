@@ -17,9 +17,11 @@
 Schauen Sie sich noch einmal das ‘Big Picture’ der Interaktion zwischen den Komponenten der Beispielanwendung in der [Beispielanwendung](http://moodle.oncampus.de/modules/ir493/onmod/IAMNJM/nodejs/grund.shtml) an. 
 Versuchen Sie, den kompletten Durchlauf eines Aufrufs einer CRUD Methode nachzuvollziehen, beginnend mit der Ausführung einer Aktion durch den Nutzer auf Ebene der graphischen Nutzeroberfläche. Schauen Sie sich dafür die nachfolgend genannten Skripte und Funktionen an.
 
-```webcontent/js/controller/TopicviewViewController.js``` 
+    webcontent/js/controller/TopicviewViewController.js
+
 und
- ```TopicviewCRUDOperations.js: createTopicview(), readTopicview(), updateTopicview(), deleteTopicview()```
+
+    TopicviewCRUDOperations.js: createTopicview(), readTopicview(), updateTopicview(), deleteTopicview()
 
 
 * Wann wird die Ansicht aktualisiert? Unmittelbar nach der Nutzereingabe oder erst, wenn die Aktion erfolgreich auf Serverseite durchgeführt wurde?  
