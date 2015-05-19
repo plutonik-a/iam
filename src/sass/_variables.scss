@@ -10,20 +10,20 @@ $accent-color:    rgb(63,169,245);
 $primary-color:   lighten($black, 50%) !default; // rgb(128,128,128)
 
 // Background Colors
-$body-bg-color: lighten($black, 35%) !default; // rgb(90,90,90)
-$menu-item-idle-color: $primary-color;
-$menu-item-active-color: $white;
+$body-bg-color:           lighten($black, 35%) !default; // rgb(90,90,90)
+$menu-item-idle-color:    $primary-color;
+$menu-item-active-color:  $white;
 // $menu-bg-color: ;
-$box-bg-dark-color: lighten($black, 17%) !default; // rgb(45,45,45)
-$box-bg-light-color: $white;
-$box-bg-accent-color: $accent-color;
+$box-bg-dark-color:       lighten($black, 17%) !default; // rgb(45,45,45)
+$box-bg-light-color:      $white;
+$box-bg-accent-color:     $accent-color;
 
 // Text Colors
-$text-contrast-color: $white;
-$text-light-color: lighten($black, 94%); //rgb(242,242,242)
-$text-mid-color: lighten($black, 70%); // rgb(179,179,179)
-$text-color: $primary-color; // rgb(128,128,128)
-$text-dark-color: lighten($black, 30%); // rgb(77,77,77)
+$text-contrast-color:     $white;
+$text-light-color:        lighten($black, 94%); // rgb(242,242,242)
+$text-mid-color:          lighten($black, 70%); // rgb(179,179,179)
+$text-color:              $primary-color;       // rgb(128,128,128)
+$text-dark-color:         lighten($black, 30%); // rgb(77,77,77)
 
 // Link Colors
 $link-color-active: $white;
